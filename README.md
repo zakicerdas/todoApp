@@ -87,8 +87,8 @@ Filter Todos	✅
 Props & useState	✅
 Responsive Design	✅
 
-🖼️ Preview
-(Tambahkan screenshot project di sini)
+link vercel:
+todo-app-ppzg.vercel.app
 
 
 🧑‍💻 Teknologi yang Digunakan
