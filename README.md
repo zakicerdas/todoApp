@@ -1,73 +1,108 @@
-# React + TypeScript + Vite
+# 📝 TodoList App  
+### _"Tulis apa yang ingin kamu lakukan — dan buktikan kamu bisa menyelesaikannya."_ ✨  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## 🚀 Tentang Proyek
+Aplikasi **Todo List sederhana** yang dibuat menggunakan **React + TypeScript + Vite**.  
+Proyek ini merupakan bagian dari _Evaluasi Pekanan_ untuk menguji pemahaman dasar React seperti penggunaan **state**, **props**, dan **komponen fungsional**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+> Fokusnya bukan sekadar menambah tugas... tapi juga membuktikan kamu bisa menyelesaikan semuanya, kan? 😌💪
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🧩 Fitur-Fitur Utama
 
-## Expanding the ESLint configuration
+✅ Tambah todo baru (Enter / tombol **Tambah**)  
+✅ Tampilkan daftar todo (dengan status aktif / selesai)  
+✅ Toggle status selesai via checkbox  
+✅ Hapus todo dari daftar  
+✅ Filter: **Semua**, **Aktif**, **Selesai**  
+✅ Bersihkan semua todo yang sudah selesai  
+💅 (Opsional) Styling responsif dengan Tailwind CSS  
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📁 Struktur Proyek
+src/
+├── components/
+│ ├── TodoList.tsx → komponen utama (state + logic)
+│ ├── TodoForm.tsx → form input todo
+│ ├── TodoItem.tsx → item tunggal
+│ └── TodoFilter.tsx → tombol filter (All/Active/Completed)
+├── App.tsx
+├── main.tsx
+└── index.css
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## ⚙️ Cara Menjalankan
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+```bash
+# 1. Clone repository
+git clone https://github.com/zakicerdas/todoApp.git
+cd todoApp
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+# 2. Install dependensi
+npm install
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+# 3. Jalankan proyek
+npm run dev
+Kemudian buka di browser:
+👉 http://localhost:5173/
+
+🧠 Konsep React yang Diterapkan
+Functional Components (tanpa class)
+
+State management dengan useState
+
+Props untuk komunikasi antar-komponen
+
+Conditional Rendering
+
+List Rendering dengan key
+
+Functional update di setter state
+→ setTodos(prev => [...prev, newTodo])
+
+🎨 Styling
+Tampilan dibuat minimalis dan mudah dikustomisasi:
+
+Warna lembut dengan background abu muda
+
+Card putih di tengah layar
+
+Tombol filter dan input yang rapi
+
+Bisa diubah dengan Tailwind, CSS module, atau inline style sesuai selera
+
+“Simpel bukan berarti membosankan — justru mudah dikembangkan 💫”
+
+🧾 Checklist Penilaian
+Kriteria	Status
+Add Todo	✅
+Display Todo List	✅
+Toggle Completion	✅
+Delete Todo	✅
+Filter Todos	✅
+Props & useState	✅
+Responsive Design	✅
+
+🖼️ Preview
+(Tambahkan screenshot project di sini)
+
+
+🧑‍💻 Teknologi yang Digunakan
+⚛️ React + TypeScript + Vite
+
+🎨 (Opsional) Tailwind CSS
+
+💡 ESLint untuk menjaga kualitas kode
+
+💬 Catatan Kecil
+“Setiap tugas yang kamu tulis di sini adalah langkah kecil menuju kebiasaan besar — menyelesaikan apa yang kamu mulai.” ☕
+
+✨ Dibuat dengan semangat, sedikit kopi, dan banyak bug yang akhirnya terselesaikan ✨
+by @zakicerdas 💻
+
+
+
