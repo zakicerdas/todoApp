@@ -88,7 +88,7 @@ Props & useState	✅
 Responsive Design	✅
 
 link vercel:
-todo-app-ppzg.vercel.app
+https://todo-app-ppzg.vercel.app/
 
 
 🧑‍💻 Teknologi yang Digunakan
