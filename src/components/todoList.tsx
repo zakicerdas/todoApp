@@ -1,4 +1,4 @@
-import React, { useState, type JSX } from "react";
+import { useState, type JSX } from "react";
 import TodoItem from "./todoItem";
 import TodoFilter, { type FilterType } from "./todoFilter";
 import TodoForm from "./todoForm";
